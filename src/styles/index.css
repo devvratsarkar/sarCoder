@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "./css/loading-screen.css";
+
+/* Dark theme – primary, secondary, white, primary gradient */
+@theme {
+  --color-primary: #21d5ed;
+  --color-secondary: #7b899d;
+  --color-surface: #000;
+  --color-surface-elevated: #1a2332;
+  --color-border: #2d3748;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --primary: #21d5ed;
+  --secondary: #7b899d;
+  --primary-gradient: linear-gradient(135deg, #21d5ed 0%, #0ea5b7 50%, #0891b2 100%);
+  --primary-gradient-subtle: linear-gradient(135deg, rgba(33, 213, 237, 0.15) 0%, rgba(33, 213, 237, 0.05) 100%);
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+code, kbd, pre, samp {
+  font-family: var(--font-mono);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-surface text-white antialiased font-mono;
+}
+
+/* Utility classes for theme usage */
+.bg-primary-gradient {
+  background: var(--primary-gradient);
+}
+
+.bg-primary-gradient-subtle {
+  background: var(--primary-gradient-subtle);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}

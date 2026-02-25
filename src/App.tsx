@@ -1,43 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import PrimaryHeader from "./components/layout/PrimaryHeader";
+import PrimaryFooter from "./components/layout/PrimaryFooter";
+import LoadingScreen from "./components/layout/LoadingScreen";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [loading, setLoading] = useState(true);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-slate-900 text-white">
-      <div className="flex gap-8 justify-center">
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img
-            src={viteLogo}
-            className="h-24 p-6 transition-[filter] hover:drop-shadow-[0_0_2em_#646cffaa]"
-            alt="Vite logo"
-          />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img
-            src={reactLogo}
-            className="h-24 p-6 transition-[filter] hover:drop-shadow-[0_0_2em_#61dafbaa] motion-safe:animate-[spin_20s_linear_infinite]"
-            alt="React logo"
-          />
-        </a>
-      </div>
-      <h1 className="text-4xl font-bold mt-4">Vite + React</h1>
-      <div className="p-8">
-        <button
-          onClick={() => setCount((c) => c + 1)}
-          className="rounded-lg border border-transparent px-5 py-3 text-base font-medium bg-slate-700 hover:border-violet-500 focus:outline focus:ring-4 focus:ring-violet-500/50 transition-colors"
-        >
-          count is {count}
-        </button>
-        <p className="mt-4 text-slate-400">
-          Edit <code className="bg-slate-800 px-2 py-1 rounded">src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="text-slate-500">Click on the Vite and React logos to learn more</p>
-    </div>
-  )
+    <>
+      <AnimatePresence>
+        {loading && (
+          <LoadingScreen onComplete={() => setLoading(false)} />
+        )}
+      </AnimatePresence>
+      {!loading && (
+        <div className="min-h-screen flex flex-col">
+          <PrimaryHeader />
+          <main className="flex-1 px-4 py-12">
+            <section className="max-w-6xl mx-auto">
+              <div className="bg-primary-gradient-subtle border border-border rounded-xl p-8 text-center">
+                <h1 className="text-3xl font-bold text-white mb-2">Welcome</h1>
+                <p className="text-secondary max-w-xl mx-auto">
+                  Dark theme with primary <span className="text-primary">#21D5ED</span>, secondary{" "}
+                  <span className="text-secondary">#7b899d</span>, and white.
+                </p>
+                <button
+                  type="button"
+                  className="mt-6 px-6 py-3 rounded-lg bg-primary-gradient text-white font-medium shadow-lg hover:opacity-90 transition-opacity"
+                >
+                  Primary gradient button
+                </button>
+              </div>
+            </section>
+          </main>
+          <PrimaryFooter />
+        </div>
+      )}
+    </>
+  );
 }
-
-export default App
