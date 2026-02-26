@@ -64,7 +64,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           opacity: 0,
           transition: { duration: 0.55, delay: 0.12, ease: [0.25, 0.46, 0.45, 0.94] },
         }}
-        className="absolute inset-0 bg-[#050505] bg-gradient-mesh flex flex-col items-center justify-center pointer-events-auto"
+        className="absolute inset-0 bg-surface bg-gradient-mesh flex flex-col items-center justify-center pointer-events-auto"
       >
         <div className="relative overflow-hidden text-center w-full flex flex-col items-center">
           <div className="h-24 md:h-32 shrink-0" aria-hidden />

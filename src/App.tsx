@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+
 import PrimaryHeader from "./components/layout/PrimaryHeader";
 import PrimaryFooter from "./components/layout/PrimaryFooter";
 import LoadingScreen from "./components/layout/LoadingScreen";
@@ -15,15 +16,21 @@ export default function App() {
           <LoadingScreen onComplete={() => setLoading(false)} />
         )}
       </AnimatePresence>
-      {!loading && (
-        <div className="min-h-screen flex flex-col">
-          <PrimaryHeader />
-          {/* <main> */}
+      <AnimatePresence>
+        {!loading && (
+          <motion.div
+            key="main"
+            className="min-h-screen flex flex-col"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.12, ease: [0.25, 0.46, 0.45, 0.94] }}
+          >
+            <PrimaryHeader />
             <HomePage />
-          {/* </main> */}
-          <PrimaryFooter />
-        </div>
-      )}
+            <PrimaryFooter />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
