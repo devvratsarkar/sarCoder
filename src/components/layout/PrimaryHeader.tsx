@@ -4,7 +4,7 @@ import { LOGO_LAYOUT, LOGO_LETTERS } from "../../constants/logo";
 export default function PrimaryHeader() {
   return (
     <header className="border-b border-border bg-surface">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="custom_container_x flex items-center justify-between">
         <span className="inline-flex items-center font-bold tracking-tighter font-mono text-4xl">
           {LOGO_LETTERS.map((letter, i) => (
             <motion.span

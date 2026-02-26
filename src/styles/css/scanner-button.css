@@ -1,0 +1,85 @@
+
+/* ================================================================
+   Scanner button (site-wide primary color)
+   ================================================================ */
+   .btn-scan {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border-radius: 9999px;
+    overflow: hidden;
+    border: 1px solid rgba(var(--primary-rgb), 0.3);
+    color: rgba(var(--primary-rgb), 0.9);
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .btn-scan:hover {
+    border-color: rgba(var(--primary-rgb), 0.6);
+    color: var(--primary);
+  }
+  
+  .btn-scan:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+  
+  .btn-scan .scan-line {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(var(--primary-rgb), 0.4),
+        transparent);
+    animation: scan 2s infinite ease-in-out;
+    transform: skewX(-20deg);
+    pointer-events: none;
+  }
+  
+  @keyframes scan {
+    0% {
+      left: -100%;
+    }
+  
+    100% {
+      left: 200%;
+    }
+  }
+  
+  .btn-scan .spotlight-beam {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% -10%,
+        rgba(var(--primary-rgb), 0.35),
+        transparent 55%);
+    opacity: 0;
+    mix-blend-mode: screen;
+    transition: opacity 0.25s ease-out;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .btn-scan:hover .spotlight-beam {
+    opacity: 1;
+  }
+  
+  .btn-scan .btn-scan-label {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn-scan.btn-scan-full {
+    width: 100%;
+  }
+  

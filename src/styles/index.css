@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./css/loading-screen.css";
+@import "./css/scanner-button.css";
 
 /* Dark theme – primary, secondary, white, primary gradient */
 @theme {
@@ -13,23 +14,23 @@
 
 :root {
   --primary: #21d5ed;
+  --primary-rgb: 33, 213, 237;
   --secondary: #7b899d;
   --primary-gradient: linear-gradient(135deg, #21d5ed 0%, #0ea5b7 50%, #0891b2 100%);
   --primary-gradient-subtle: linear-gradient(135deg, rgba(33, 213, 237, 0.15) 0%, rgba(33, 213, 237, 0.05) 100%);
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
-code, kbd, pre, samp {
-  font-family: var(--font-mono);
-}
 
 html {
   color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 body {
   @apply bg-surface text-white antialiased font-mono;
 }
+
 
 /* Utility classes for theme usage */
 .bg-primary-gradient {
@@ -54,4 +55,28 @@ body {
 
 .bg-secondary {
   background-color: var(--secondary);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-surface-elevated {
+  background-color: var(--color-surface-elevated);
+}
+
+.text-surface {
+  color: var(--color-surface);
+}
+
+.border-border {
+  border-color: var(--color-border);
+}
+
+.border-surface {
+  border-color: var(--color-surface);
+}
+
+.custom_container_x {
+  @apply w-[95%] mx-auto px-4 py-4;
 }
