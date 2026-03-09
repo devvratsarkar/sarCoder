@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { HiOutlineArrowUpRight } from 'react-icons/hi2';
-import ScannerButton from '../ui/ScannerButton';
+import ScannerButton from '../../ui/ScannerButton';
 
 const TERMINAL_LINES = [
     {
