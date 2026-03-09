@@ -167,7 +167,7 @@ export default function HomeBanner() {
       </div>
 
       <div className="relative z-10 w-full min-h-screen">
-        <div className="grid grow grid-cols-1 gap-y-12 pt-8 pb-12 lg:grid-cols-12 lg:gap-8 ">
+        <div className="grid grow grid-cols-1 gap-y-12 pt-8 lg:grid-cols-12 lg:gap-8 ">
           {/* Left indicator column */}
           <motion.div
             className="relative hidden flex-col items-start pt-4 lg:col-span-1 lg:flex"
@@ -187,9 +187,8 @@ export default function HomeBanner() {
                   animate={revealed ? "visible" : "hidden"}
                   custom={step - 1}
                 >
-                  <div className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-medium transition-all ${
-                    step === 1 ? "bg-primary text-surface" : "border border-border text-secondary group-hover:border-primary group-hover:text-primary"
-                  }`}>
+                  <div className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-medium transition-all ${step === 1 ? "bg-primary text-surface" : "border border-border text-secondary group-hover:border-primary group-hover:text-primary"
+                    }`}>
                     {step}
                   </div>
                 </motion.button>

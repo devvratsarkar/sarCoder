@@ -1,11 +1,11 @@
 import HomeBanner from "../../components/banners/HomeBanner";
-import AboutSarCoder from "./AboutSarCoder";
+import PlatformFeatures from "../../components/pages/PlatformFeatures";
 
 export default function HomePage() {
     return (
         <>
             <HomeBanner />
-            <AboutSarCoder />
+            <PlatformFeatures />
         </>
     )
 }
