@@ -4,7 +4,7 @@ import ScannerButton from "../../ui/ScannerButton";
 export default function CreativeStudioSection() {
     return (
         <>
-            <div className="max-w-7xl sm:px-6 lg:px-8 mr-auto ml-auto pt-12 pr-4 pb-12 pl-4">
+            <section className="custom_container_x">
                 {/* Main Headlines */}
                 <div className="text-center space-y-4 mb-16 scroll-element fade-in-up animate-in">
                     <h1 className="text-4xl sm:text-6xl lg:text-8xl font-light tracking-tighter leading-none">
@@ -282,7 +282,7 @@ export default function CreativeStudioSection() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
