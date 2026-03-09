@@ -183,13 +183,13 @@ export default function PlatformFeatures() {
     return (
         <>
             <section
-                className="custom_container_x border-dashed bg-surface border-border border-b"
+                className="custom_container_x"
                 data-element-locator="html &gt; body:nth-of-type(1) &gt; main:nth-of-type(1) &gt; section:nth-of-type(1)"
             >
                 <div
                     data-element-locator="html &gt; body:nth-of-type(1) &gt; main:nth-of-type(1) &gt; section:nth-of-type(1) &gt; div:nth-of-type(1)"
                 >
-                    <div className="mb-16 relative">
+                    <div className="relative">
                         <div className="absolute -top-12 -left-12 w-32 h-32 bg-primary/10 rounded-full blur-3xl" aria-hidden="true" />
 
                         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 z-10 relative gap-x-8 gap-y-8">
@@ -455,7 +455,7 @@ export default function PlatformFeatures() {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-dashed divide-border border-dashed border-border border-b">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-dashed divide-border ">
                             <div className="flex flex-col gap-3 group hover:bg-primary/5 transition-colors pt-6 pr-6 pb-6 pl-6 gap-x-3 gap-y-3 reveal-on-scroll">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
