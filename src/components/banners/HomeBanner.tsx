@@ -117,16 +117,6 @@ const floatCardVariants = {
   },
 };
 
-/** Grid lines: draw down from top (sync with overlay gone) */
-const gridLineVariants = {
-  hidden: { scaleY: 0, opacity: 0 },
-  visible: (i: number) => ({
-    scaleY: 1,
-    opacity: 0.4,
-    transition: { duration: 0.7, ease: revealEase, delay: 0.02 + i * 0.06 },
-  }),
-};
-
 export default function HomeBanner() {
   const [revealed, setRevealed] = useState(false);
 
@@ -151,21 +141,6 @@ export default function HomeBanner() {
           background: "radial-gradient(ellipse 80% 40% at 50% 0%, rgba(33, 213, 237, 0.08) 0%, transparent 55%)",
         }}
       />
-      {/* Vertical grid lines — draw down after load */}
-      <div className="pointer-events-none fixed inset-0 z-0 mx-auto flex justify-between custom_container_x">
-        {[0, 1, 2, 3].map((i) => (
-          <motion.div
-            key={i}
-            className={`origin-top h-full w-px bg-border/50 ${i === 1 ? "hidden md:block" : ""} ${i === 2 ? "hidden lg:block" : ""}`}
-            style={{ opacity: 0.4 }}
-            variants={gridLineVariants}
-            initial="hidden"
-            animate={revealed ? "visible" : "hidden"}
-            custom={i}
-          />
-        ))}
-      </div>
-
       <div className="relative z-10 w-full min-h-screen">
         <div className="grid grow grid-cols-1 gap-y-12 pt-8 lg:grid-cols-12 lg:gap-8 ">
           {/* Left indicator column */}
