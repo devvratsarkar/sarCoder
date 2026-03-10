@@ -1,0 +1,164 @@
+/* Telemetry section – panels and scroll-triggered animations */
+
+.cmd-panel {
+  background: linear-gradient(180deg, rgba(18, 18, 20, 0.92), rgba(10, 10, 12, 0.92));
+  border: 1px solid rgba(63, 63, 70, 0.55);
+  border-radius: 18px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    inset 0 -20px 40px rgba(0, 0, 0, 0.45),
+    0 18px 40px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.cmd-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: linear-gradient(180deg, rgba(24, 24, 27, 0.9), rgba(10, 10, 12, 0.6));
+  border-bottom: 1px solid rgba(63, 63, 70, 0.5);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.cmd-panel-body {
+  padding: 16px;
+  position: relative;
+  flex: 1;
+}
+
+.tactile-glass {
+  background: linear-gradient(180deg, rgba(24, 24, 27, 0.75), rgba(10, 10, 12, 0.55));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Radar sweep – animate on entry */
+.radar-sweep {
+  opacity: 0;
+  border-radius: 999px;
+  background:
+    conic-gradient(from 0deg,
+      rgba(16, 185, 129, 0),
+      rgba(16, 185, 129, 0) 52%,
+      rgba(16, 185, 129, 0.22) 62%,
+      rgba(16, 185, 129, 0) 72%,
+      rgba(16, 185, 129, 0));
+  -webkit-mask: radial-gradient(circle, transparent 0 55%, #000 58% 100%);
+  mask: radial-gradient(circle, transparent 0 55%, #000 58% 100%);
+  will-change: transform, opacity;
+}
+
+@keyframes radar-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.telemetry-section.telemetry-in .radar-sweep {
+  opacity: 1;
+  animation: radar-rotate 2.8s linear infinite;
+}
+
+/* Purple progress bar (Deployment Tasks) */
+@keyframes pb-deploy {
+  0% { width: 0%; }
+  100% { width: var(--pb, 80%); }
+}
+
+@keyframes pb-sweep {
+  0% { left: -50%; }
+  100% { left: 150%; }
+}
+
+.pb-fill {
+  width: 0%;
+}
+
+.pb-sheen {
+  left: -50%;
+}
+
+.telemetry-section.telemetry-in .pb-fill {
+  animation: pb-deploy 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.telemetry-section.telemetry-in .pb-sheen {
+  animation: pb-sweep 2s linear infinite;
+}
+
+/* Line progress (Quantum Relay Uplink) */
+@keyframes signal-flow {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes sweep-block {
+  0% { left: 5%; right: 80%; }
+  25% { box-shadow: inset 0 0 20px rgba(99, 102, 241, 0.5); }
+  50% {
+    left: 45%;
+    right: 45%;
+    box-shadow: inset 0 0 30px rgba(129, 140, 248, 0.8);
+    background-color: rgba(99, 102, 241, 0.3);
+    border-color: rgba(129, 140, 248, 1);
+  }
+  75% { box-shadow: inset 0 0 20px rgba(99, 102, 241, 0.5); }
+  100% { left: 80%; right: 5%; }
+}
+
+.signal-texture {
+  background: repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(99, 102, 241, 0.2) 10px, rgba(99, 102, 241, 0.2) 20px);
+  background-size: 200% 100%;
+  background-position: 200% 0;
+}
+
+.sweep-block {
+  left: 5%;
+  right: 80%;
+}
+
+.telemetry-section.telemetry-in .signal-texture {
+  animation: signal-flow 20s linear infinite;
+}
+
+.telemetry-section.telemetry-in .sweep-block {
+  animation: sweep-block 4s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+/* Thermal / compute bar animations */
+@keyframes thermal-fluctuation {
+  0%, 100% { stroke-dashoffset: 110; }
+  50% { stroke-dashoffset: 60; }
+}
+
+@keyframes aura-compute-bar-1 {
+  0%, 100% { height: 4rem; }
+  33% { height: 5.5rem; }
+  66% { height: 2.5rem; }
+}
+
+@keyframes aura-compute-bar-2 {
+  0%, 100% { height: 6rem; }
+  33% { height: 4.5rem; }
+  66% { height: 7rem; }
+}
+
+@keyframes aura-compute-bar-3 {
+  0%, 100% { height: 3.5rem; }
+  33% { height: 4.5rem; }
+  66% { height: 2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .telemetry-section * {
+    animation: none !important;
+    transition: none !important;
+  }
+  .pb-fill {
+    width: var(--pb, 80%) !important;
+  }
+  .radar-sweep {
+    opacity: 1 !important;
+  }
+}

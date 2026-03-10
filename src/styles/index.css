@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./css/loading-screen.css";
 @import "./css/scanner-button.css";
+@import "./css/services-tech-section.css";
 
 /* Dark theme – primary, secondary, white, primary gradient */
 @theme {
