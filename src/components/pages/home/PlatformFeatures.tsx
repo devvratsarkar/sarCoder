@@ -194,10 +194,6 @@ export default function PlatformFeatures() {
 
                         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 z-10 relative gap-x-8 gap-y-8">
                             <div className="max-w-2xl">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <span className="uppercase text-xs font-semibold text-primary tracking-widest font-geist">01. Platform</span>
-                                </div>
-
                                 <h2 className="text-4xl md:text-5xl lg:text-6xl text-white font-light tracking-tighter mb-4 font-geist leading-[1.1] reveal-on-scroll">
                                     Automate your
                                     entire revenue <span className='text-primary'>stack.</span>

@@ -127,21 +127,10 @@ export default function HomeBanner() {
 
   return (
     <section
-      className="relative min-h-screen overflow-x-hidden custom_container_x"
+      className="relative custom_container_x"
       aria-label="Hero banner"
     >
-      {/* Subtle gradient continuity from loading screen */}
-      <motion.div
-        className="pointer-events-none absolute inset-0 z-0 opacity-30"
-        aria-hidden
-        initial={{ opacity: 0 }}
-        animate={revealed ? { opacity: 1 } : {}}
-        transition={{ duration: 1, ease: revealEase, delay: 0 }}
-        style={{
-          background: "radial-gradient(ellipse 80% 40% at 50% 0%, rgba(33, 213, 237, 0.08) 0%, transparent 55%)",
-        }}
-      />
-      <div className="relative z-10 w-full min-h-screen">
+      <div className="relative z-10 w-full">
         <div className="grid grow grid-cols-1 gap-y-12 pt-8 lg:grid-cols-12 lg:gap-8 ">
           {/* Left indicator column */}
           <motion.div
