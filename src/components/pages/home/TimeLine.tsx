@@ -71,50 +71,6 @@ const TIMELINE_STEPS = [
     },
 ];
 
-const timelineStyles = `
-  .tactile-base {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
-    box-shadow:
-      0 10px 30px rgba(0, 0, 0, 0.55),
-      inset 0 1px 0 rgba(255, 255, 255, 0.08),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-  }
-
-  .tactile-inset {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(255, 255, 255, 0.03));
-    box-shadow:
-      inset 0 2px 10px rgba(0, 0, 0, 0.7),
-      inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  }
-
-  .tactile-glass {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    box-shadow:
-      0 12px 30px rgba(0, 0, 0, 0.55),
-      inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  }
-
-  @keyframes text-slide {
-    0% {
-      transform: translateY(-60%);
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(220%);
-      opacity: 0;
-    }
-  }
-`;
 
 export default function TimeLine() {
     const sectionRef = useRef<HTMLElement>(null);
@@ -147,7 +103,6 @@ export default function TimeLine() {
                 id="project-pipeline"
                 className="custom_container_x overflow-hidden relative"
             >
-                <style>{timelineStyles}</style>
                 <div className="text-center max-w-2xl mx-auto mb-10 scroll-animate">
                     <h2 className="text-3xl font-normal tracking-tight text-zinc-100">
                         How we work

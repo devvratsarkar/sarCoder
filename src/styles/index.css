@@ -2,6 +2,7 @@
 @import "./css/loading-screen.css";
 @import "./css/scanner-button.css";
 @import "./css/services-tech-section.css";
+@import "./css/time-line.css";
 
 /* Dark theme – primary, secondary, white, primary gradient */
 @theme {

@@ -19,10 +19,10 @@ const technologies = [
 
 /** Match LoadingScreen: same ease and rhythm so hero feels like continuation */
 const revealEase = LOGO_LAYOUT.ease;
-const revealTransition = {
-  duration: 0.6,
-  ease: revealEase,
-};
+// const revealTransition = {
+//   duration: 0.6,
+//   ease: revealEase,
+// };
 
 /** Blur-in + lift (echoes LoadingScreen letter animation) */
 const blockVariants = {
@@ -46,19 +46,19 @@ const blockVariants = {
 };
 
 /** Step circles: scale + opacity, staggered (like loading progress) */
-const stepVariants = {
-  hidden: { opacity: 0, scale: 0.6 },
-  visible: (i: number) => ({
-    opacity: 1,
-    scale: 1,
-    transition: {
-      type: "spring" as const,
-      stiffness: 320,
-      damping: 24,
-      delay: 0.15 + i * 0.08,
-    },
-  }),
-};
+// const stepVariants = {
+//   hidden: { opacity: 0, scale: 0.6 },
+//   visible: (i: number) => ({
+//     opacity: 1,
+//     scale: 1,
+//     transition: {
+//       type: "spring" as const,
+//       stiffness: 320,
+//       damping: 24,
+//       delay: 0.15 + i * 0.08,
+//     },
+//   }),
+// };
 
 /** Tech pills: cascade in (same stagger feel as logo letters) */
 const pillVariants = {
@@ -131,9 +131,9 @@ export default function HomeBanner() {
       aria-label="Hero banner"
     >
       <div className="relative z-10 w-full">
-        <div className="grid grow grid-cols-1 gap-y-12 pt-8 lg:grid-cols-12 lg:gap-8 ">
+        <div className="grid grow grid-cols-1 gap-y-12 pt-8 lg:grid-cols-12 lg:gap-x-20 ">
           {/* Left indicator column */}
-          <motion.div
+          {/* <motion.div
             className="relative hidden flex-col items-start pt-4 lg:col-span-1 lg:flex"
             initial={{ opacity: 0 }}
             animate={revealed ? { opacity: 1 } : {}}
@@ -168,10 +168,10 @@ export default function HomeBanner() {
             >
               01 — INTRO
             </motion.span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Content column */}
-          <div className="space-y-6 flex flex-col justify-start lg:col-span-5">
+          <div className="space-y-6 flex flex-col justify-start lg:col-span-6">
             {/* Badge — icon scale echoes loading progress ring */}
             <motion.div
               className="flex items-center gap-4 gap-x-4 gap-y-4"
@@ -215,7 +215,7 @@ export default function HomeBanner() {
 
             {/* Subtext */}
             <motion.p
-              className="max-w-md text-secondary"
+              className="text-secondary"
               variants={blockVariants}
               initial="hidden"
               animate={revealed ? "visible" : "hidden"}
