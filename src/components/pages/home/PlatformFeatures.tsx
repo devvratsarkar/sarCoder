@@ -125,11 +125,9 @@ function NeuralRoutingAnimation({ containerRef }: { containerRef: React.RefObjec
             const path = paths[targetIndex] as SVGPathElement;
             const target = targets[targetIndex];
 
-            // 3. Highlight Path
-            paths.forEach((p) => p.classList.add('opacity-20'));
-            path.classList.remove('opacity-20');
+            // 3. Highlight Path (inactive paths stay visible at text-secondary/30)
             path.classList.replace('text-secondary/30', 'text-primary');
-            path.classList.add('opacity-100', 'drop-shadow-[0_0_3px_rgba(var(--primary-rgb),0.5)]');
+            path.classList.add('drop-shadow-[0_0_3px_rgba(var(--primary-rgb),0.5)]');
 
             // 4. Send Packet
             (packet as SVGElement).style.opacity = '1';
@@ -155,8 +153,7 @@ function NeuralRoutingAnimation({ containerRef }: { containerRef: React.RefObjec
             sourceGlow.classList.add('opacity-0');
 
             path.classList.replace('text-primary', 'text-secondary/30');
-            path.classList.remove('opacity-100', 'drop-shadow-[0_0_3px_rgba(var(--primary-rgb),0.5)]');
-            paths.forEach((p) => p.classList.remove('opacity-20'));
+            path.classList.remove('drop-shadow-[0_0_3px_rgba(var(--primary-rgb),0.5)]');
 
             target.classList.remove('border-primary', 'scale-110', 'bg-primary/10', 'shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)]');
             if (targetSvg) targetSvg.classList.replace('text-primary', 'text-secondary');
