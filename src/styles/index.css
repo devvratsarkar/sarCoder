@@ -3,6 +3,7 @@
 @import "./css/scanner-button.css";
 @import "./css/services-tech-section.css";
 @import "./css/time-line.css";
+@import "./css/powered-by-section.css";
 
 /* Dark theme – primary, secondary, white, primary gradient */
 @theme {
@@ -30,7 +31,7 @@ html {
 }
 
 body {
-  @apply bg-surface text-white antialiased font-mono;
+  @apply bg-surface text-white antialiased font-mono overflow-x-hidden;
 }
 
 

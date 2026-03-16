@@ -3,6 +3,7 @@ import AgencyValueProposition from "../../components/pages/home/AgencyValuePropo
 import CreativeStudioSection from "../../components/pages/home/CreativeStudioSection";
 import PrecisionArchitecture from "../../components/pages/home/PrecisionArchitecture";
 import PlatformFeatures from "../../components/pages/home/PlatformFeatures";
+import PoweredBySection from "../../components/pages/home/PoweredBySection";
 import ServicesTechSection from "../../components/pages/home/ServicesTechSection";
 import TeamSection from "../../components/pages/home/TeamSection";
 import TimeLine from "../../components/pages/home/TimeLine";
@@ -15,6 +16,7 @@ export default function HomePage() {
             <PlatformFeatures />
             <TimeLine />
             <PrecisionArchitecture />
+            <PoweredBySection />
             <CreativeStudioSection />
             <WeWorkWith />
             <TeamSection />
