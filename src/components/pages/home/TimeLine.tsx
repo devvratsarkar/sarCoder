@@ -122,14 +122,15 @@ export default function TimeLine() {
                         </div>
                     </div>
 
-                    {TIMELINE_STEPS.map((step) => {
+                    {TIMELINE_STEPS.map((step, index) => {
                         const Icon = step.icon;
                         const isRight = step.position === 'right';
                         const hasBars = 'bars' in step && step.bars === 3 && step.barDelay;
+                        const isLast = index === TIMELINE_STEPS.length - 1;
                         return (
                             <div
                                 key={step.id}
-                                className={`relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8 mb-16 group pl-20 md:pl-0 ${isRight ? '' : ''}`}
+                                className={`relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8 group pl-20 md:pl-0 ${!isLast ? 'mb-16' : ''} ${isRight ? '' : ''}`}
                             >
                                 {/* Title: mobile */}
                                 <div
