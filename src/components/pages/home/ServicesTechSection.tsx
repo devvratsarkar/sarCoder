@@ -26,7 +26,7 @@ export default function ServicesTechSection() {
     >
       <div className="relative z-10">
         <div className="mb-8">
-          <h2 className="text-3xl font-normal tracking-tight text-zinc-100 flex items-center gap-3">
+          <h2 className="text-4xl md:text-5xl font-normal tracking-tight text-white flex items-center gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
@@ -37,19 +37,18 @@ export default function ServicesTechSection() {
               strokeWidth={1.5}
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-6 h-6 text-zinc-500"
+              className="w-6 h-6 text-primary"
               aria-hidden
             >
               <path d="m7 11 2-2-2-2" />
               <path d="M11 13h4" />
               <rect width={18} height={18} x={3} y={3} rx={2} ry={2} />
             </svg>
-            Services & Technology Stack
+            Services & <span className="text-primary">Technology Stack</span>
           </h2>
-          <p className="mt-4 text-base text-zinc-400 max-w-2xl">
-            Website development, design, mobile apps, and social media management.
-            Built with Next.js, React, Node.js, Flutter, React Native, WordPress,
-            Shopify, Wix, and Strapi.
+          <p className="mt-4 text-secondary text-base">
+            We offer website development, website design, mobile app development, and social media management.
+            Our go‑to stack: Next.js, React, Node, Flutter, React Native for apps; WordPress, Shopify, Wix, and Strapi when a CMS or store is the right fit.
           </p>
         </div>
 
@@ -114,7 +113,7 @@ export default function ServicesTechSection() {
           {/* Active Projects Widget */}
           <div className="cmd-panel lg:col-span-1 h-70">
             <div className="cmd-panel-header">
-              <span className="text-xs text-zinc-500 font-mono uppercase tracking-widest">
+              <span className="text-xs text-secondary font-mono uppercase tracking-widest">
                 Live Projects
               </span>
               <svg
@@ -127,7 +126,7 @@ export default function ServicesTechSection() {
                 strokeWidth={1.5}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-4 h-4 text-zinc-600"
+                className="w-4 h-4 text-secondary"
                 aria-hidden
               >
                 <circle cx={12} cy={12} r={1} />
@@ -175,7 +174,7 @@ export default function ServicesTechSection() {
 
               <div className="w-full flex justify-between items-end absolute bottom-4 px-4">
                 <div className="px-2 py-1 rounded bg-zinc-800/50 border border-zinc-700 shadow-inner">
-                  <span className="text-xs text-zinc-400 font-mono tracking-widest uppercase">
+                  <span className="text-xs text-secondary font-mono tracking-widest uppercase">
                     Healthy
                   </span>
                 </div>
@@ -189,7 +188,7 @@ export default function ServicesTechSection() {
                   strokeWidth={1.5}
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="w-4 h-4 text-zinc-500 hover:text-zinc-300 transition-colors cursor-pointer"
+                  className="w-4 h-4 text-secondary hover:text-zinc-300 transition-colors cursor-pointer"
                   aria-hidden
                 >
                   <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
@@ -216,13 +215,13 @@ export default function ServicesTechSection() {
                 </button>
                 <button
                   type="button"
-                  className="px-3 py-1 text-xs font-normal text-zinc-500 hover:text-zinc-300 transition-colors"
+                  className="px-3 py-1 text-xs font-normal text-secondary hover:text-zinc-300 transition-colors"
                 >
                   Issues
                 </button>
                 <button
                   type="button"
-                  className="px-3 py-1 text-xs font-normal text-zinc-500 hover:text-zinc-300 transition-colors"
+                  className="px-3 py-1 text-xs font-normal text-secondary hover:text-zinc-300 transition-colors"
                 >
                   Updates
                 </button>
@@ -231,19 +230,19 @@ export default function ServicesTechSection() {
 
             <div className="p-0 flex flex-col flex-1 relative overflow-hidden">
               <div className="grid grid-cols-[auto_1fr_2fr_1fr_1fr] gap-4 px-4 py-3 border-b border-zinc-800/50 bg-[#121214]">
-                <span className="text-xs text-zinc-600 font-mono tracking-widest uppercase w-6">
+                <span className="text-xs text-secondary font-mono tracking-widest uppercase w-6">
                   CHK
                 </span>
-                <span className="text-xs text-zinc-600 font-mono tracking-widest uppercase">
+                <span className="text-xs text-secondary font-mono tracking-widest uppercase">
                   REF
                 </span>
-                <span className="text-xs text-zinc-600 font-mono tracking-widest uppercase">
+                <span className="text-xs text-secondary font-mono tracking-widest uppercase">
                   OPERATION
                 </span>
-                <span className="text-xs text-zinc-600 font-mono tracking-widest uppercase">
+                <span className="text-xs text-secondary font-mono tracking-widest uppercase">
                   STATE
                 </span>
-                <span className="text-xs text-zinc-600 font-mono tracking-widest uppercase text-right">
+                <span className="text-xs text-secondary font-mono tracking-widest uppercase text-right">
                   TIMESTAMP
                 </span>
               </div>
@@ -267,7 +266,7 @@ export default function ServicesTechSection() {
                       <path d="M20 6 9 17l-5-5" />
                     </svg>
                   </div>
-                  <span className="text-xs text-zinc-400 font-mono">
+                  <span className="text-xs text-secondary font-mono">
                     PRJ-01
                   </span>
                   <span className="text-sm text-zinc-300 truncate">
@@ -278,7 +277,7 @@ export default function ServicesTechSection() {
                       LIVE
                     </span>
                   </div>
-                  <span className="text-xs text-zinc-500 font-mono text-right">
+                  <span className="text-xs text-secondary font-mono text-right">
                     10:14:22.01
                   </span>
                 </div>
@@ -322,18 +321,18 @@ export default function ServicesTechSection() {
 
                 <div className="grid grid-cols-[auto_1fr_2fr_1fr_1fr] gap-4 px-4 py-3 items-center border-b border-zinc-800/30 hover:bg-zinc-800/20 transition-colors">
                   <div className="w-4 h-4 rounded bg-[#0a0a0c] border border-zinc-700 shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)] cursor-pointer" />
-                  <span className="text-xs text-zinc-500 font-mono">
+                  <span className="text-xs text-secondary font-mono">
                     PRJ-03
                   </span>
-                  <span className="text-sm text-zinc-500 truncate filter blur-[1px]">
+                  <span className="text-sm text-secondary truncate filter blur-[1px]">
                     Flutter app QA
                   </span>
                   <div>
-                    <span className="text-xs text-zinc-500 px-2 py-0.5 rounded border border-zinc-800 bg-zinc-900/50">
+                    <span className="text-xs text-secondary px-2 py-0.5 rounded border border-zinc-800 bg-zinc-900/50">
                       PENDING
                     </span>
                   </div>
-                  <span className="text-xs text-zinc-600 font-mono text-right">
+                  <span className="text-xs text-secondary font-mono text-right">
                     09:45:00.62
                   </span>
                 </div>
@@ -346,7 +345,7 @@ export default function ServicesTechSection() {
                 <div className="w-px h-4 bg-zinc-700" />
                 <button
                   type="button"
-                  className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-zinc-200 transition-colors"
+                  className="flex items-center gap-1.5 text-xs text-secondary hover:text-zinc-200 transition-colors"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -367,7 +366,7 @@ export default function ServicesTechSection() {
                 </button>
                 <button
                   type="button"
-                  className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-red-400 transition-colors"
+                  className="flex items-center gap-1.5 text-xs text-secondary hover:text-red-400 transition-colors"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -410,7 +409,7 @@ export default function ServicesTechSection() {
                 strokeWidth={1.5}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-4 h-4 text-zinc-600"
+                className="w-4 h-4 text-secondary"
                 aria-hidden
               >
                 <circle cx={12} cy={12} r={1} />
@@ -421,7 +420,7 @@ export default function ServicesTechSection() {
 
             <div className="cmd-panel-body flex flex-col gap-4 gap-x-4 gap-y-4">
               <div className="bg-[#0a0a0c] rounded-xl p-4 border border-zinc-800 shadow-[inset_0_2px_10px_rgba(0,0,0,0.8)] flex flex-col gap-4 relative">
-                <p className="text-sm text-zinc-400 leading-relaxed">
+                <p className="text-sm text-secondary leading-relaxed">
                   E-commerce site — Shopify
                   <br />
                   Theme customization and client review.
@@ -429,7 +428,7 @@ export default function ServicesTechSection() {
 
                 <div className="flex flex-col gap-2">
                   <div className="flex justify-between items-end">
-                    <span className="text-xs text-zinc-500 font-mono uppercase tracking-widest">
+                    <span className="text-xs text-secondary font-mono uppercase tracking-widest">
                       Progress
                     </span>
                     <span className="text-xs font-mono text-indigo-400">
@@ -449,7 +448,7 @@ export default function ServicesTechSection() {
                 </div>
 
                 <div className="flex justify-between items-center mt-2">
-                  <div className="flex items-center gap-1.5 text-zinc-500">
+                  <div className="flex items-center gap-1.5 text-secondary">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={24}
@@ -470,10 +469,10 @@ export default function ServicesTechSection() {
                   </div>
 
                   <div className="flex -space-x-2">
-                    <div className="w-6 h-6 rounded-full border border-zinc-700 bg-zinc-800 flex items-center justify-center text-xs text-zinc-400">
+                    <div className="w-6 h-6 rounded-full border border-zinc-700 bg-zinc-800 flex items-center justify-center text-xs text-secondary">
                       SC
                     </div>
-                    <div className="w-6 h-6 rounded-full border border-zinc-700 bg-zinc-800 flex items-center justify-center text-xs text-zinc-400">
+                    <div className="w-6 h-6 rounded-full border border-zinc-700 bg-zinc-800 flex items-center justify-center text-xs text-secondary">
                       MR
                     </div>
                   </div>
@@ -481,11 +480,11 @@ export default function ServicesTechSection() {
               </div>
 
               <div className="mt-auto flex justify-between items-center px-1">
-                <span className="text-xs text-zinc-500 font-mono uppercase tracking-widest">
+                <span className="text-xs text-secondary font-mono uppercase tracking-widest">
                   2/4 Pending
                 </span>
                 <label className="flex items-center gap-2 cursor-pointer">
-                  <span className="text-xs text-zinc-400 font-normal">
+                  <span className="text-xs text-secondary font-normal">
                     Auto-deploy
                   </span>
                   <div className="relative">
@@ -514,7 +513,7 @@ export default function ServicesTechSection() {
                 strokeWidth={1.5}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-4 h-4 text-zinc-600"
+                className="w-4 h-4 text-secondary"
                 aria-hidden
               >
                 <circle cx={12} cy={12} r={1} />
@@ -535,7 +534,7 @@ export default function ServicesTechSection() {
                       animation: "aura-compute-bar-1 3.5s ease-in-out infinite",
                     }}
                   />
-                  <span className="text-xs text-zinc-500 font-mono mt-2 uppercase tracking-widest absolute -bottom-6">
+                  <span className="text-xs text-secondary font-mono mt-2 uppercase tracking-widest absolute -bottom-6">
                     Mobile
                   </span>
                 </div>
@@ -550,7 +549,7 @@ export default function ServicesTechSection() {
                       animation: "aura-compute-bar-2 4.5s ease-in-out infinite",
                     }}
                   />
-                  <span className="text-xs text-zinc-500 font-mono mt-2 uppercase tracking-widest absolute -bottom-6">
+                  <span className="text-xs text-secondary font-mono mt-2 uppercase tracking-widest absolute -bottom-6">
                     Web
                   </span>
                 </div>
@@ -562,7 +561,7 @@ export default function ServicesTechSection() {
                       animation: "aura-compute-bar-3 3s ease-in-out infinite",
                     }}
                   />
-                  <span className="text-xs text-zinc-500 font-mono mt-2 uppercase tracking-widest absolute -bottom-6">
+                  <span className="text-xs text-secondary font-mono mt-2 uppercase tracking-widest absolute -bottom-6">
                     CMS
                   </span>
                 </div>
@@ -571,7 +570,7 @@ export default function ServicesTechSection() {
               <div className="mt-8 grid grid-cols-3 gap-2 px-1">
                 <div className="flex flex-col">
                   <span className="text-xl font-normal text-zinc-200">24</span>
-                  <span className="text-xs text-zinc-500 font-mono uppercase tracking-widest">
+                  <span className="text-xs text-secondary font-mono uppercase tracking-widest">
                     Websites
                   </span>
                 </div>
@@ -585,13 +584,13 @@ export default function ServicesTechSection() {
                   >
                     12
                   </span>
-                  <span className="text-xs text-zinc-500 font-mono uppercase tracking-widest">
+                  <span className="text-xs text-secondary font-mono uppercase tracking-widest">
                     Apps
                   </span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-xl font-normal text-zinc-400">50+</span>
-                  <span className="text-xs text-zinc-500 font-mono uppercase tracking-widest">
+                  <span className="text-xl font-normal text-secondary">50+</span>
+                  <span className="text-xs text-secondary font-mono uppercase tracking-widest">
                     Launched
                   </span>
                 </div>
@@ -649,16 +648,16 @@ export default function ServicesTechSection() {
                     <div className="w-px h-2 bg-zinc-700" />
                     <div className="w-px h-2 bg-zinc-700" />
                   </div>
-                  <span className="text-xs text-zinc-500 font-mono">
+                  <span className="text-xs text-secondary font-mono">
                     10:00
                   </span>
-                  <span className="text-xs text-zinc-400 font-mono relative -left-4">
+                  <span className="text-xs text-secondary font-mono relative -left-4">
                     10:30
                   </span>
-                  <span className="text-xs text-zinc-400 font-mono relative left-4">
+                  <span className="text-xs text-secondary font-mono relative left-4">
                     12:00
                   </span>
-                  <span className="text-xs text-zinc-500 font-mono">
+                  <span className="text-xs text-secondary font-mono">
                     12:30
                   </span>
                 </div>
@@ -666,7 +665,7 @@ export default function ServicesTechSection() {
 
               <div className="flex justify-between items-end mt-auto">
                 <div className="flex flex-col gap-1">
-                  <span className="text-xs text-zinc-500">
+                  <span className="text-xs text-secondary">
                     Deploy Channel
                   </span>
                   <a
@@ -696,7 +695,7 @@ export default function ServicesTechSection() {
 
                 <button
                   type="button"
-                  className="w-10 h-10 rounded-lg bg-[#18181b] border border-zinc-700 shadow-lg flex items-center justify-center text-zinc-400 hover:text-white transition-all hover:border-indigo-500 hover:shadow-[0_0_15px_rgba(99,102,241,0.2)]"
+                  className="w-10 h-10 rounded-lg bg-[#18181b] border border-zinc-700 shadow-lg flex items-center justify-center text-secondary hover:text-white transition-all hover:border-indigo-500 hover:shadow-[0_0_15px_rgba(99,102,241,0.2)]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

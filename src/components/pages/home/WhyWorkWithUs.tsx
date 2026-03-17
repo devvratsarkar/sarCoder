@@ -1,7 +1,15 @@
-export default function AgencyValueProposition() {
+export default function WhyWorkWithUs() {
     return (
         <>
-            <section className="custom_container_x ">
+            <section className="custom_container_x">
+                <div className="mb-10 md:mb-12">
+                    <h2 className="text-4xl md:text-5xl text-white font-light tracking-tighter mb-3 leading-[1.1] font-geist">
+                        Why work with <span className="text-primary">us</span>
+                    </h2>
+                    <p className="text-lg text-neutral-400 font-geist max-w-2xl">
+                        Results-driven delivery, clear process, and a team that stands behind every project.
+                    </p>
+                </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     {/* Left: Core differentiator */}
                     <div
@@ -11,12 +19,12 @@ export default function AgencyValueProposition() {
                             <div className="flex items-center gap-3">
                                 <div>
                                     <p className="text-sm font-geist text-neutral-300">Our Edge</p>
-                                    <p className="text-xs sm:text-sm mt-1 font-geist text-neutral-400">Strategic Design Thinking</p>
+                                    <p className="text-xs sm:text-sm mt-1 font-geist text-neutral-400">Web, Mobile, Design & Social</p>
                                 </div>
                             </div>
                             <div className="mt-auto">
-                                <div className="sm:text-4xl text-2xl font-semibold text-white tracking-tight font-geist mb-4">
-                                    Design with <span className="text-primary">Purpose</span>
+                                <div className="text-4xl md:text-5xl font-semibold text-white tracking-tight font-geist mb-4">
+                                    Built to <span className="text-primary">last</span>
                                 </div>
                                 <div className="flex items-center gap-2 text-neutral-200 mb-6">
                                     <div className="flex items-center gap-1">
@@ -24,7 +32,7 @@ export default function AgencyValueProposition() {
                                         <div className="h-2 w-2 rounded-full bg-primary/80" />
                                         <div className="h-2 w-2 rounded-full bg-primary/90" />
                                     </div>
-                                    <p className="text-sm font-geist">Every pixel has intention</p>
+                                    <p className="text-sm font-geist">Clean code, clear process</p>
                                 </div>
                                 <div className="flex items-center gap-2 text-xs font-geist text-neutral-300">
                                     Discover our approach
@@ -50,19 +58,19 @@ export default function AgencyValueProposition() {
                                 <span className="font-semibold text-primary/90">2x</span> higher engagement
                             </h3>
 
-                            <p className="mt-8 text-sm font-geist text-neutral-400">Our Methodology:</p>
+                            <p className="mt-8 text-sm font-geist text-neutral-400">How we work:</p>
                             <div className="mt-4 space-y-3">
                                 <div className="flex items-center gap-3 text-sm font-geist text-neutral-200">
                                     <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                                    Strategic Discovery & Research
+                                    Discovery & scope—goals, audience, timeline
                                 </div>
                                 <div className="flex items-center gap-3 text-sm font-geist text-neutral-200">
                                     <span className="h-1.5 w-1.5 rounded-full bg-primary/80" />
-                                    Collaborative Design Process
+                                    Design & prototype before we code
                                 </div>
                                 <div className="flex items-center gap-3 text-sm font-geist text-neutral-200">
                                     <span className="h-1.5 w-1.5 rounded-full bg-primary/90" />
-                                    Data-Driven Optimization
+                                    Build, launch & handover with docs
                                 </div>
                             </div>
 
@@ -73,7 +81,7 @@ export default function AgencyValueProposition() {
                                     ))}
                                 </div>
                                 <p className="mt-3 text-sm font-geist text-neutral-300">
-                                    &quot;Lumina doesn&apos;t just create designs—they craft experiences. Their strategic thinking elevated our entire brand presence.&quot;
+                                    &quot;SarCODER built our new site and ran our social for six months. Everything stayed on brand and on time. Would work with them again.&quot;
                                 </p>
                                 <div className="mt-4 flex items-center gap-3">
                                     <img
@@ -83,7 +91,7 @@ export default function AgencyValueProposition() {
                                     />
                                     <div className="text-sm">
                                         <p className="font-geist text-neutral-200">Michael Torres</p>
-                                        <p className="text-xs text-neutral-500 font-geist">CEO, Innovation Labs</p>
+                                        <p className="text-xs text-neutral-500 font-geist">Founder, Growth Co</p>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +115,7 @@ export default function AgencyValueProposition() {
                                 <div className="ml-5 sm:ml-0 sm:mt-6 text-center">
                                     <h4 className="text-lg font-geist font-light tracking-tight text-white">100% Satisfaction</h4>
                                     <p className="mt-2 text-sm font-geist text-neutral-400">
-                                        Guaranteed results or we&apos;ll make it right. Your success is our mission.
+                                        We stand behind our work. If something's not right, we fix it—no runaround.
                                     </p>
                                 </div>
                             </div>
@@ -118,25 +126,25 @@ export default function AgencyValueProposition() {
                             <div className="grid grid-cols-2 gap-4 mb-6">
                                 <div>
                                     <div className="text-2xl font-geist font-light tracking-tight text-white">150+</div>
-                                    <p className="text-xs mt-1 font-geist text-neutral-400">Projects delivered</p>
+                                    <p className="text-xs mt-1 font-geist text-neutral-400">Sites & apps shipped</p>
                                 </div>
                                 <div>
                                     <div className="text-2xl font-geist font-light tracking-tight text-white">48h</div>
-                                    <p className="text-xs mt-1 font-geist text-neutral-400">Average start time</p>
+                                    <p className="text-xs mt-1 font-geist text-neutral-400">Typical kickoff</p>
                                 </div>
                             </div>
 
                             <div className="space-y-3">
                                 <div className="flex items-center justify-between text-sm font-geist">
-                                    <span className="text-neutral-300">Brand Strategy</span>
+                                    <span className="text-neutral-300">Website Development</span>
                                     <span className="text-primary">Expert</span>
                                 </div>
                                 <div className="flex items-center justify-between text-sm font-geist">
-                                    <span className="text-neutral-300">Visual Design</span>
+                                    <span className="text-neutral-300">Website Design</span>
                                     <span className="text-primary/90">Expert</span>
                                 </div>
                                 <div className="flex items-center justify-between text-sm font-geist">
-                                    <span className="text-neutral-300">Digital Marketing</span>
+                                    <span className="text-neutral-300">Mobile & Social</span>
                                     <span className="text-primary">Expert</span>
                                 </div>
                             </div>
@@ -146,7 +154,7 @@ export default function AgencyValueProposition() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check text-primary">
                                         <path d="M20 6 9 17l-5-5" />
                                     </svg>
-                                    Lumina Certified Team
+                                    SarCODER team
                                 </div>
                             </div>
                         </div>

@@ -7,22 +7,22 @@ export default function CreativeStudioSection() {
             <section className="custom_container_x">
                 {/* Main Headlines */}
                 <div className="text-center space-y-4 mb-16 scroll-element fade-in-up animate-in">
-                    <h1 className="text-4xl sm:text-6xl lg:text-8xl font-light tracking-tighter leading-none">
+                    <h1 className="text-4xl md:text-5xl font-light tracking-tighter leading-none text-white">
                         <span className="flex items-center justify-center gap-4">
-                            CREATIVE
+                            WEBSITE
                             <span className="inline-flex bg-primary/20 rounded-full p-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="arrow-big-right" className="lucide lucide-arrow-big-right w-6 h-6 text-primary"><path d="M11 9a1 1 0 0 0 1-1V5.061a1 1 0 0 1 1.811-.75l6.836 6.836a1.207 1.207 0 0 1 0 1.707l-6.836 6.835a1 1 0 0 1-1.811-.75V16a1 1 0 0 0-1-1H5a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1z" /></svg>
                             </span>
                             <span className="text-primary">DESIGN</span>
                         </span>
                     </h1>
-                    <h1 className="text-4xl sm:text-6xl lg:text-8xl font-light tracking-tighter leading-none">
+                    <h1 className="text-4xl md:text-5xl font-light tracking-tighter leading-none text-white">
                         <span className="flex items-center justify-center gap-4">
-                            <span className="text-primary">VISUAL</span>
+                            <span className="text-primary">&</span>
                             <span className="inline-flex bg-primary/20 rounded-full p-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="arrow-big-right" className="lucide lucide-arrow-big-right w-6 h-6 text-primary"><path d="M11 9a1 1 0 0 0 1-1V5.061a1 1 0 0 1 1.811-.75l6.836 6.836a1.207 1.207 0 0 1 0 1.707l-6.836 6.835a1 1 0 0 1-1.811-.75V16a1 1 0 0 0-1-1H5a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1z" /></svg>
                             </span>
-                            <span className="flex items-center justify-center gap-4">STUDIO</span>
+                            <span className="flex items-center justify-center gap-4">BEYOND</span>
                         </span>
                     </h1>
                 </div>
@@ -36,9 +36,9 @@ export default function CreativeStudioSection() {
                                 <span className="sm:text-6xl text-5xl font-light text-white tracking-tighter">200+</span>
                                 <span>projects</span>
                             </div>
-                            <p className="text-sm mt-3">We craft visual experiences that inspire, engage, and leave lasting impressions.
+                            <p className="text-sm mt-3">Sites that load fast, look sharp, and work on every device. We handle the design and the build so you get one cohesive product.
                             </p>
-                            <p className="mt-4 italic">Design. Create. Inspire.</p>
+                            <p className="mt-4 italic">Design. Build. Launch.</p>
 
                             <div className="mt-6 overflow-hidden rounded-2xl ring-1 ring-border">
                                 <div className="relative w-full h-44 sm:h-56 bg-surface-elevated">
@@ -136,7 +136,7 @@ export default function CreativeStudioSection() {
                         {/* Subtitle + CTA */}
                         <div className="text-center space-y-6 mb-8">
                             <p>
-                                Where creativity meets strategy. We transform brands through compelling visual storytelling and innovative design solutions.
+                                We don’t just make things pretty—we make them work. From wireframes to final pixels, our design supports your goals and our dev team brings it to life.
                             </p>
 
                             <div className="flex flex-wrap gap-3 items-center justify-center">
@@ -176,12 +176,12 @@ export default function CreativeStudioSection() {
                                     </div>
                                 </div>
                                 <p className="mt-4">
-                                    <span className="sm:text-6xl text-5xl font-light text-white tracking-tighter">25+</span> creatives
+                                    <span className="sm:text-6xl text-5xl font-light text-white tracking-tighter">25+</span> projects a year
                                 </p>
                             </div>
 
                             <p className="text-sm">
-                                Our passionate team pushes creative boundaries to deliver exceptional results that exceed expectations.
+                                Designers and developers working together under one roof. No endless handoffs—just one team that sees the project through.
                             </p>
                         </div>
                     </div>
@@ -189,9 +189,9 @@ export default function CreativeStudioSection() {
                     {/* Right Card */}
                     <div className="lg:col-span-1 scroll-element fade-in-right animate-in">
                         <div className="lg:min-h-130 flex flex-col ring-1 ring-border bg-surface-elevated rounded-3xl pt-6 pr-6 pb-6 pl-6">
-                            <h3 className="text-lg font-semibold mb-2">Creative Services</h3>
+                            <h3 className="text-lg font-semibold mb-2">What we design</h3>
                             <p className="text-sm mt-3 mb-8">
-                                From concept to completion, we deliver creative solutions that make an impact.
+                                Website design, mobile UI, brand identity, and social visuals—all aligned so your presence feels consistent everywhere.
                             </p>
 
                             <div className="flex-1 relative">
@@ -218,7 +218,7 @@ export default function CreativeStudioSection() {
                                         <div className="grid grid-cols-2 gap-3 mb-6">
                                             <div className="group relative overflow-hidden rounded-xl bg-primary/5 p-4 ring-1 ring-border hover:ring-primary/30 transition-all hover:scale-[1.02]">
                                                 <div className="flex gap-2 mb-2 items-center">
-                                                    <span className="text-sm font-medium text-white">Brand Identity</span>
+                                                    <span className="text-sm font-medium text-white">Website Design</span>
                                                 </div>
                                                 <div className="space-y-1">
                                                     <div className="h-1.5 rounded-full bg-primary/20 w-full" />
@@ -228,7 +228,7 @@ export default function CreativeStudioSection() {
 
                                             <div className="group relative overflow-hidden rounded-xl bg-primary/5 p-4 ring-1 ring-border hover:ring-primary/30 transition-all hover:scale-[1.02]">
                                                 <div className="flex items-center gap-2 mb-2">
-                                                    <span className="text-sm font-medium text-white">UI/UX Design</span>
+                                                    <span className="text-sm font-medium text-white">UI/UX & Prototypes</span>
                                                 </div>
                                                 <div className="space-y-1">
                                                     <div className="h-1.5 rounded-full bg-primary/20 w-4/5" />
@@ -239,7 +239,7 @@ export default function CreativeStudioSection() {
                                             <div className="group relative overflow-hidden rounded-xl bg-primary/5 p-4 ring-1 ring-border hover:ring-primary/30 transition-all hover:scale-[1.02]">
                                                 <div className="flex items-center gap-2 mb-2">
                                                     <div className="h-6 w-6 rounded bg-primary/20" />
-                                                    <span className="text-sm font-medium text-white">Animation</span>
+                                                    <span className="text-sm font-medium text-white">Mobile App UI</span>
                                                 </div>
                                                 <div className="space-y-1">
                                                     <div className="h-1.5 rounded-full bg-primary/20 w-3/4" />
@@ -249,7 +249,7 @@ export default function CreativeStudioSection() {
 
                                             <div className="group relative overflow-hidden rounded-xl bg-primary/5 p-4 ring-1 ring-border hover:ring-primary/30 transition-all hover:scale-[1.02]">
                                                 <div className="flex items-center gap-2 mb-2">
-                                                    <span className="text-sm font-medium text-white">Art Direction</span>
+                                                    <span className="text-sm font-medium text-white">Social & Brand</span>
                                                 </div>
                                                 <div className="space-y-1">
                                                     <div className="h-1.5 rounded-full bg-primary/20 w-5/6" />
@@ -261,12 +261,12 @@ export default function CreativeStudioSection() {
                                         {/* Bottom visual element with progress indicator */}
                                         <div className="mt-auto">
                                             <div className="flex items-center justify-between mb-3">
-                                                <span className="text-xs font-medium uppercase tracking-wide">Creative Process</span>
+                                                <span className="text-xs font-medium uppercase tracking-wide">Current sprint</span>
                                                 <span className="text-xs">75% Complete</span>
                                             </div>
                                             <div className="flex items-center gap-3">
                                                 <div className="flex-1">
-                                                    <p className="text-xs">Brand identity development in progress</p>
+                                                    <p className="text-xs">Website redesign — design review</p>
                                                 </div>
                                                 <button className="h-8 w-8 hover:bg-primary/80 flex transition-colors bg-primary rounded-full items-center justify-center">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-surface">

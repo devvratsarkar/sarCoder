@@ -27,18 +27,18 @@ const getProjectImage = (id: number, width: number, height: number) =>
     `https://picsum.photos/seed/${id + 100}/${width}/${height}`;
 
 const PROJECTS = [
-    { id: 1, title: "Neural Dashboard", category: "web" as const, tagline: "Real-time analytics platform", year: "24", accent: "cyan", size: "large" as const },
-    { id: 2, title: "Flux Mobile", category: "mobile" as const, tagline: "Cross-platform fitness app", year: "24", accent: "emerald", size: "default" as const },
-    { id: 3, title: "Aurora Identity", category: "branding" as const, tagline: "Brand system & visual language", year: "23", accent: "violet", size: "default" as const },
-    { id: 4, title: "Commerce Stack", category: "ecommerce" as const, tagline: "Headless storefront", year: "24", accent: "amber", size: "default" as const },
-    { id: 5, title: "Interface Kit", category: "design" as const, tagline: "Design system & components", year: "23", accent: "primary", size: "default" as const },
-    { id: 6, title: "Signal API", category: "web" as const, tagline: "Developer-first API platform", year: "24", accent: "sky", size: "default" as const },
-    { id: 7, title: "Pulse App", category: "mobile" as const, tagline: "Health monitoring & insights", year: "23", accent: "rose", size: "default" as const },
-    { id: 8, title: "Canvas Studio", category: "design" as const, tagline: "Creative tooling suite", year: "24", accent: "teal", size: "default" as const },
-    { id: 9, title: "Merchant OS", category: "ecommerce" as const, tagline: "Unified commerce backend", year: "23", accent: "orange", size: "default" as const },
-    { id: 10, title: "Nexus Portal", category: "web" as const, tagline: "Enterprise portal & SSO", year: "24", accent: "primary", size: "default" as const },
-    { id: 11, title: "Echo Brand", category: "branding" as const, tagline: "Audio brand identity", year: "23", accent: "indigo", size: "default" as const },
-    { id: 12, title: "Pixel Lab", category: "design" as const, tagline: "UI experiments & prototypes", year: "24", accent: "cyan", size: "default" as const },
+    { id: 1, title: "B2B SaaS Dashboard", category: "web" as const, tagline: "Next.js + React admin and reporting", year: "24", accent: "cyan", size: "large" as const },
+    { id: 2, title: "Field Service App", category: "mobile" as const, tagline: "Flutter app for technicians and dispatch", year: "24", accent: "emerald", size: "default" as const },
+    { id: 3, title: "Rebrand & Web Refresh", category: "branding" as const, tagline: "Brand guidelines and new site on WordPress", year: "23", accent: "violet", size: "default" as const },
+    { id: 4, title: "Shopify Store Build", category: "ecommerce" as const, tagline: "Custom theme and checkout flow", year: "24", accent: "amber", size: "default" as const },
+    { id: 5, title: "Design System", category: "design" as const, tagline: "Component library and UI patterns for product", year: "23", accent: "primary", size: "default" as const },
+    { id: 6, title: "Landing & Blog", category: "web" as const, tagline: "Marketing site and Strapi CMS", year: "24", accent: "sky", size: "default" as const },
+    { id: 7, title: "Health & Wellness App", category: "mobile" as const, tagline: "React Native iOS and Android", year: "23", accent: "rose", size: "default" as const },
+    { id: 8, title: "E‑commerce Redesign", category: "design" as const, tagline: "UI/UX and visual refresh for online store", year: "24", accent: "teal", size: "default" as const },
+    { id: 9, title: "Wix Store Migration", category: "ecommerce" as const, tagline: "Move from Wix to Shopify with new design", year: "23", accent: "orange", size: "default" as const },
+    { id: 10, title: "Client Portal", category: "web" as const, tagline: "Node.js backend, React front-end", year: "24", accent: "primary", size: "default" as const },
+    { id: 11, title: "Social & Brand Pack", category: "branding" as const, tagline: "Social templates and content strategy", year: "23", accent: "indigo", size: "default" as const },
+    { id: 12, title: "App Prototypes", category: "design" as const, tagline: "Interactive prototypes for funding round", year: "24", accent: "cyan", size: "default" as const },
 ];
 
 const filteredProjects = (active: CategoryId) =>
@@ -136,13 +136,13 @@ export default function ProjectsPortfolioSection() {
                             <p className="text-primary/80 text-[11px] font-medium uppercase tracking-[0.25em] mb-4">
                                 Portfolio
                             </p>
-                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white leading-[1.15]">
+                            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-white leading-[1.15]">
                                 Selected{" "}
                                 <span className="text-primary">projects</span>
-                                <span className="text-white/90"> we ship.</span>
+                                <span className="text-white"> we ship.</span>
                             </h2>
                             <p className="mt-4 text-sm text-secondary/90 max-w-lg leading-relaxed">
-                                From web and mobile to branding and design—here’s a slice of what we build.
+                                Websites, apps, stores, and brand work—a sample of recent projects across our stack.
                             </p>
                         </div>
                         <div className="flex items-center gap-3">

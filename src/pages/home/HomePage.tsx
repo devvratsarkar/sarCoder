@@ -1,5 +1,5 @@
 import HomeBanner from "../../components/banners/HomeBanner";
-import AgencyValueProposition from "../../components/pages/home/AgencyValueProposition";
+import WhyWorkWithUs from "../../components/pages/home/WhyWorkWithUs";
 import CreativeStudioSection from "../../components/pages/home/CreativeStudioSection";
 import PrecisionArchitecture from "../../components/pages/home/PrecisionArchitecture";
 import PlatformFeatures from "../../components/pages/home/PlatformFeatures";
@@ -13,17 +13,19 @@ import WeWorkWith from "../../components/pages/home/WeWorkWith";
 export default function HomePage() {
     return (
         <>
-            <HomeBanner />
-            <PlatformFeatures />
-            <TimeLine />
-            <PrecisionArchitecture />
-            <PoweredBySection />
-            <CreativeStudioSection />
-            <WeWorkWith />
-            <ProjectsPortfolioSection />
-            <TeamSection />
-            <ServicesTechSection />
-            <AgencyValueProposition />
+            <div className="space-y-20">
+                <HomeBanner />
+                <PlatformFeatures />
+                <WeWorkWith />
+                <TimeLine />
+                <PrecisionArchitecture />
+                <CreativeStudioSection />
+                <ProjectsPortfolioSection />
+                <PoweredBySection />
+                <TeamSection />
+                <ServicesTechSection />
+                <WhyWorkWithUs />
+            </div>
         </>
     )
 }

@@ -28,26 +28,26 @@ const TESTIMONIALS: Array<{
       id: "1",
       variant: "emerald",
       quote:
-        "The design-to-dev workflow changed completely with SarCoder. We went from handoff chaos to a single source of truth and instant previews.",
-      highlight: "single source of truth",
-      name: "Elena Rostova",
-      role: "Lead Product Designer",
+        "SarCODER built our new site on Next.js and it’s fast, easy to update, and actually looks like the designs. No more ‘it got lost in translation’.",
+      highlight: "actually looks like the designs",
+      name: "Priya Mehta",
+      role: "Marketing Director",
       avatar:
         "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64&q=80",
-      avatarAlt: "Elena Rostova",
+      avatarAlt: "Priya Mehta",
       Icon: HiCheckBadge,
     },
     {
       id: "2",
       variant: "amber",
       quote:
-        "Precision builds and safe deploys gave our team confidence. Rollbacks are one click, and we ship faster without fear.",
-      highlight: "safe deploys",
-      name: "Marcus Vance",
-      role: "VP Engineering",
+        "We needed an app for iOS and Android without two separate codebases. They delivered with Flutter on time and the quality held up in production.",
+      highlight: "on time and the quality held up",
+      name: "James Okonkwo",
+      role: "Product Lead",
       avatar:
         "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64&q=80",
-      avatarAlt: "Marcus Vance",
+      avatarAlt: "James Okonkwo",
       Icon: HiShieldCheck,
       pulseDelay: "0.5s",
     },
@@ -55,13 +55,13 @@ const TESTIMONIALS: Array<{
       id: "3",
       variant: "cyan",
       quote:
-        "Adopting their stack was remarkably smooth. The multi-platform delivery and design system checks run on every commit—no more drift.",
-      highlight: "design system checks",
-      name: "Kira Solis",
-      role: "Cloud Architect",
+        "Our Shopify store was a mess. SarCODER redesigned it, fixed the checkout flow, and our social team now has a content calendar that actually gets used.",
+      highlight: "content calendar that actually gets used",
+      name: "Sofia Chen",
+      role: "E‑commerce & Social",
       avatar:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=64&h=64&q=80",
-      avatarAlt: "Kira Solis",
+      avatarAlt: "Sofia Chen",
       Icon: HiCodeBracket,
       pulseDelay: "1s",
     },
@@ -317,14 +317,14 @@ export default function PoweredBySection() {
               Trusted by teams
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-extralight text-white tracking-tight mb-6 drop-shadow-[0_2px_10px_rgba(255,255,255,0.1)]">
+          <h2 className="text-4xl md:text-5xl font-extralight text-white tracking-tight mb-6 drop-shadow-[0_2px_10px_rgba(255,255,255,0.1)]">
             Powered by{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-b from-primary to-cyan-600 drop-shadow-[0_0_15px_rgba(33,213,237,0.4)]">
-              SarCoder
+            <span className="text-primary drop-shadow-[0_0_15px_rgba(33,213,237,0.4)]">
+              SarCODER
             </span>
           </h2>
-          <p className="text-lg text-zinc-400 font-extralight max-w-xl mx-auto leading-relaxed">
-            From agile startups to scaled products, teams rely on our design systems and deployment pipeline to ship with confidence.
+          <p className="text-lg text-secondary font-extralight leading-relaxed">
+            Startups and growing brands trust us to build their websites, apps, and social presence—without the agency bloat.
           </p>
         </div>
 
@@ -373,7 +373,7 @@ export default function PoweredBySection() {
               >
                 {m.value}
               </div>
-              <div className="text-xs text-zinc-500 uppercase tracking-widest font-light">
+              <div className="text-xs text-secondary uppercase tracking-widest font-light">
                 {m.label}
               </div>
             </div>
@@ -384,7 +384,7 @@ export default function PoweredBySection() {
           <ScannerButton
             endIcon={<HiOutlineArrowRight className="size-4" aria-hidden />}
           >Start a project</ScannerButton>
-          <p className="mt-6 text-xs text-zinc-500 font-extralight">
+          <p className="mt-6 text-xs text-secondary font-extralight">
             Secure connection. Let&apos;s build something precise.
           </p>
         </div>

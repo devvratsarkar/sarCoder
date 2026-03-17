@@ -12,29 +12,29 @@ const CARDS = [
     {
         id: 'preview',
         code: 'PREV.01',
-        title: 'Live Preview & Sync',
-        description: 'Real-time design-to-dev sync with instant refresh across web and mobile.',
+        title: 'Design that matches the build',
+        description: 'We keep design and development in lockstep so the final site or app looks and feels like what you signed off on.',
         variant: 'waveform' as const,
     },
     {
         id: 'delivery',
         code: 'RTE.02',
-        title: 'Multi-Platform Delivery',
-        description: 'One design system, multiple outputs—web, mobile, and CMS from a single source.',
+        title: 'Web, mobile, and content',
+        description: 'Whether it’s a Next.js site, a Flutter app, or a WordPress or Shopify store—we pick the right tool and ship it.',
         variant: 'routing' as const,
     },
     {
         id: 'deploy',
         code: 'DEP.03',
-        title: 'Safe Deploys & Rollback',
-        description: 'Zero-downtime releases and instant rollback so you never lose progress.',
+        title: 'Smooth launches',
+        description: 'We handle hosting, DNS, and go-live so you get a live product without the ops headache.',
         variant: 'failover' as const,
     },
     {
         id: 'pipeline',
         code: 'CI.04',
-        title: 'Automated Pipelines',
-        description: 'CI/CD, automated tests, and design-system checks on every commit.',
+        title: 'Clear process',
+        description: 'Structured sprints, regular check-ins, and one point of contact so nothing falls through the cracks.',
         variant: 'dial' as const,
     },
 ];
@@ -49,18 +49,15 @@ export default function PrecisionArchitecture() {
                         <div
                             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-full bg-zinc-600/5 blur-[80px] rounded-full pointer-events-none z-0"
                         />
-                        <h2
-                            className="relative z-10 md:text-5xl lg:text-6xl text-4xl font-medium tracking-tight font-geist text-transparent bg-clip-text bg-linear-to-b from-white via-zinc-200 to-zinc-500"
-                            style={{ filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.5))' }}
-                        >
-                            Precision build.
-                            <br className="hidden sm:block" /> Real-world performance.
+                        <h2 className="relative z-10 text-4xl md:text-5xl font-medium tracking-tight font-geist text-white">
+                            Right <span className="text-primary">tools.</span>
+                            <br className="hidden sm:block" /> Real results.
                         </h2>
                         <p
-                            className="relative z-10 text-base md:text-lg text-zinc-400 font-geist max-w-2xl mx-auto leading-relaxed tracking-tight"
+                            className="relative z-10 text-base md:text-lg text-secondary font-geist max-w-2xl mx-auto leading-relaxed tracking-tight"
                             style={{ textShadow: '0 1px 2px rgba(0,0,0,0.8)' }}
                         >
-                            Every project engineered for clarity, responsiveness, and control—from design to deploy.
+                            We don’t over-engineer. We choose the right tech, build it well, and leave you with something you can maintain and grow.
                         </p>
                     </div>
                 </div>
@@ -95,7 +92,7 @@ function Card({
             />
             <div className="relative z-10 flex justify-between items-center mb-6 pl-1 pr-1 mt-1">
                 <span
-                    className="text-xs font-bold text-zinc-600 uppercase tracking-widest font-geist"
+                    className="text-xs font-bold text-secondary uppercase tracking-widest font-geist"
                     style={{ textShadow: '0px 1px 1px rgba(255,255,255,0.1), 0px -1px 1px rgba(0,0,0,0.8)' }}
                 >
                     {card.code}
@@ -130,7 +127,7 @@ function Card({
                 >
                     {card.title}
                 </h3>
-                <p className="text-sm text-zinc-400 font-geist leading-relaxed line-clamp-3">{card.description}</p>
+                <p className="text-sm text-secondary font-geist leading-relaxed line-clamp-3">{card.description}</p>
             </div>
         </div>
     );
@@ -215,19 +212,19 @@ function WaveformBlock() {
             </div>
             <div className="absolute bottom-0 inset-x-0 h-6 bg-black/80 border-t border-orange-500/30 backdrop-blur-md z-20 flex items-center justify-between px-3">
                 <div className="flex items-center gap-2">
-                    <span className="text-[8px] text-zinc-500 font-mono">RX</span>
+                    <span className="text-[8px] text-secondary font-mono">RX</span>
                     <span className="text-[10px] text-zinc-300 font-mono group-hover:text-zinc-100 transition-colors">
                         48.2k
                     </span>
                 </div>
                 <div className="flex items-center gap-2">
-                    <span className="text-[8px] text-zinc-500 font-mono">TX</span>
+                    <span className="text-[8px] text-secondary font-mono">TX</span>
                     <span className="text-[10px] text-zinc-300 font-mono group-hover:text-zinc-100 transition-colors">
                         12.1k
                     </span>
                 </div>
                 <div className="flex items-center gap-2">
-                    <span className="text-[8px] text-zinc-500 font-mono">ERR</span>
+                    <span className="text-[8px] text-secondary font-mono">ERR</span>
                     <span className="text-[10px] text-green-400 font-mono drop-shadow-[0_0_3px_#22c55e]">0.00</span>
                 </div>
             </div>
@@ -243,7 +240,7 @@ function RoutingBlock() {
                 style={{ boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.8), 0 1px 1px rgba(255,255,255,0.05)' }}
             >
                 <span
-                    className="text-[7px] font-bold text-zinc-500 tracking-wider"
+                    className="text-[7px] font-bold text-secondary tracking-wider"
                     style={{ textShadow: '0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.8)' }}
                 >
                     LOAD
@@ -520,7 +517,7 @@ function DialBlock() {
                             'inset 0 2px 4px rgba(0,0,0,1), 0 4px 6px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1)',
                     }}
                 >
-                    <span className="text-[8px] font-mono font-bold text-zinc-700 group-hover:text-green-400 transition-colors duration-300 delay-0 group-hover:delay-1200 tracking-wider">
+                    <span className="text-[8px] font-mono font-bold text-secondary group-hover:text-green-400 transition-colors duration-300 delay-0 group-hover:delay-1200 tracking-wider">
                         CAL.OK
                     </span>
                 </div>

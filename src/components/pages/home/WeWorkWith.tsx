@@ -1,8 +1,8 @@
 const SERVICES = [
-    { label: 'Website Development', description: 'Full-stack and front-end web applications' },
-    { label: 'Website Design', description: 'UI/UX and visual design for the web' },
-    { label: 'Mobile App Development', description: 'iOS & Android native and cross-platform' },
-    { label: 'Social Media Management', description: 'Strategy, content, and community' },
+    { label: 'Website Development', description: 'Custom sites with Next.js, React, Node, WordPress, Shopify, Wix—built to perform and scale.' },
+    { label: 'Website Design', description: 'UI/UX, wireframes, and visual design so your site looks and feels the part.' },
+    { label: 'Mobile App Development', description: 'iOS and Android apps with Flutter and React Native—one codebase or native when it matters.' },
+    { label: 'Social Media Management', description: 'Content calendars, posting, and strategy so your channels stay active and on-brand.' },
 ];
 
 const CDN_ICONS = 'https://cdn.simpleicons.org';
@@ -33,11 +33,11 @@ export default function WeWorkWith() {
     
                     <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 z-10 relative">
                         <div className="max-w-2xl">
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl text-white font-light tracking-tighter mb-4 leading-[1.1]">
-                                Services & <span className="text-primary drop-shadow-[0_0_24px_rgba(var(--primary-rgb),0.4)]">tech stack.</span>
+                            <h2 className="text-4xl md:text-5xl text-white font-light tracking-tighter mb-4 leading-[1.1]">
+                                Services & <span className="text-primary">tech stack.</span>
                             </h2>
-                            <p className="text-lg max-w-md text-secondary">
-                                From websites and mobile apps to social media—powered by modern frameworks and platforms you can scale on.
+                            <p className="text-lg text-secondary">
+                                We build and design with the tools that fit: Next.js and React for the web, Flutter and React Native for apps, WordPress and Shopify when you need a CMS or store.
                             </p>
                         </div>
     

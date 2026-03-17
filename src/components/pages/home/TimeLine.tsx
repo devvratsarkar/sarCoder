@@ -10,7 +10,7 @@ const TIMELINE_STEPS = [
     {
         id: 'discovery',
         title: 'Discovery & Research',
-        description: 'We align on goals, audiences, and scope—strategic discovery so every decision is intentional.',
+        description: 'We sit down with you to nail the brief: who it’s for, what it should do, and how we’ll know we’ve succeeded.',
         icon: HiOutlineMagnifyingGlass,
         position: 'left' as const,
         statLabel: 'DISCOVERY_PHASE',
@@ -19,12 +19,12 @@ const TIMELINE_STEPS = [
         barColor: 'bg-zinc-600',
         dotColor: 'bg-zinc-800',
         dotGlow: '',
-        iconColor: 'text-zinc-400',
+        iconColor: 'text-secondary',
     },
     {
         id: 'design',
         title: 'Design & Prototyping',
-        description: 'Collaborative UI/UX and visual design. We craft experiences that inspire and engage.',
+        description: 'Wireframes, mockups, and clickable prototypes so you see the experience before a single line of code is written.',
         icon: HiOutlinePaintBrush,
         position: 'right' as const,
         statLabel: 'DESIGN_STATUS',
@@ -41,7 +41,7 @@ const TIMELINE_STEPS = [
     {
         id: 'development',
         title: 'Development & Build',
-        description: 'Web, mobile, and CMS—built with Next.js, React, Flutter, Node.js, and your chosen stack.',
+        description: 'We build with Next.js, React, Node, Flutter, React Native, WordPress, Shopify, Wix, or Strapi—whatever fits the job.',
         icon: HiOutlineCodeBracketSquare,
         position: 'left' as const,
         statLabel: 'STACK',
@@ -55,11 +55,11 @@ const TIMELINE_STEPS = [
     {
         id: 'launch',
         title: 'Launch & Optimize',
-        description: 'Deploy, measure, and iterate. Data-driven optimization for lasting impact.',
+        description: 'We go live, hand over the keys, and stick around to tune performance and fix anything that pops up.',
         icon: HiOutlineRocketLaunch,
         position: 'right' as const,
         statLabel: 'DELIVERY',
-        statValue: '3X FASTER',
+        statValue: 'ON TIME',
         barWidth: 'w-6',
         barColor: 'bg-orange-500',
         dotColor: 'bg-orange-500',
@@ -104,11 +104,11 @@ export default function TimeLine() {
                 className="custom_container_x overflow-hidden relative"
             >
                 <div className="text-center max-w-2xl mx-auto mb-10 scroll-animate">
-                    <h2 className="text-3xl font-normal tracking-tight text-zinc-100">
-                        How we work
+                    <h2 className="text-4xl md:text-5xl font-normal tracking-tight text-white">
+                        How we <span className="text-primary">work</span>
                     </h2>
-                    <p className="mt-4 text-base text-zinc-400">
-                        From discovery to launch—strategic process, modern stack, and results that scale.
+                    <p className="mt-4 text-base text-secondary">
+                        No black boxes. We walk you through each step so you’re never left wondering where things stand.
                     </p>
                 </div>
                 <div className="relative max-w-3xl mx-auto scroll-animate">
@@ -137,14 +137,14 @@ export default function TimeLine() {
                                     className={`w-full mb-4 md:mb-0 md:hidden ${isRight ? 'order-1 md:order-3' : ''}`}
                                 >
                                     <h3 className="text-lg font-normal text-zinc-100">{step.title}</h3>
-                                    <p className="text-sm text-zinc-500 mt-1">{step.description}</p>
+                                    <p className="text-sm text-secondary mt-1">{step.description}</p>
                                 </div>
                                 {/* Title: desktop — left column for left step, right column for right step */}
                                 <div
                                     className={`hidden md:block md:w-1/2 ${isRight ? 'md:pl-12 order-3' : 'md:pr-12 md:text-right'}`}
                                 >
                                     <h3 className="text-lg font-normal text-zinc-100">{step.title}</h3>
-                                    <p className="text-sm text-zinc-500 mt-1">{step.description}</p>
+                                    <p className="text-sm text-secondary mt-1">{step.description}</p>
                                 </div>
                                 {/* Center dot */}
                                 <div
@@ -162,7 +162,7 @@ export default function TimeLine() {
                                         {hasBars ? (
                                             <>
                                                 <div className={`flex-1 ${isRight ? 'text-right' : ''}`}>
-                                                    <div className="text-xs font-mono text-zinc-500 mb-2">
+                                                    <div className="text-xs font-mono text-secondary mb-2">
                                                         {step.statLabel}: {step.statValue}
                                                     </div>
                                                     <div
@@ -187,7 +187,7 @@ export default function TimeLine() {
                                             </>
                                         ) : (
                                             <>
-                                                <div className="w-10 h-10 rounded tactile-inset flex items-center justify-center shrink-0 text-zinc-400">
+                                                <div className="w-10 h-10 rounded tactile-inset flex items-center justify-center shrink-0 text-secondary">
                                                     <Icon className="w-5 h-5" />
                                                 </div>
                                                 <div className="flex-1">
@@ -196,7 +196,7 @@ export default function TimeLine() {
                                                             className={`h-full w-0 rounded transition-all duration-1500 ease-out ${step.barColor} ${step.id === 'discovery' ? 'in-[.is-visible]:w-3/4 delay-300' : 'in-[.is-visible]:w-2/3 delay-1000 shadow-[0_0_8px_#10b981]'}`}
                                                         />
                                                     </div>
-                                                    <div className="text-xs font-mono text-zinc-500 mt-2">
+                                                    <div className="text-xs font-mono text-secondary mt-2">
                                                         {step.statLabel}: {step.statValue}
                                                     </div>
                                                 </div>

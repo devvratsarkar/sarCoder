@@ -16,10 +16,10 @@ type TeamMember = {
 const TEAM: TeamMember[] = [
   {
     name: "Bryan Gill",
-    role: "Lead Creative",
+    role: "Design Lead",
     image: "/image/user/best-employees.png",
-    focus: "Brand identity & visual direction",
-    tagline: "We don’t just design—we craft the story.",
+    focus: "Website design, brand identity & visual direction",
+    tagline: "Good design solves a problem—great design makes it feel obvious.",
     social: [
       { href: "https://linkedin.com", icon: "linkedin" },
       { href: "https://x.com", icon: "x" },
@@ -29,7 +29,7 @@ const TEAM: TeamMember[] = [
     name: "Sarah Chen",
     role: "UI/UX Lead",
     image: "/image/user/user2.jpg",
-    focus: "Product design & user experience",
+    focus: "Web and mobile UX, wireframes & prototypes",
     social: [
       { href: "https://linkedin.com", icon: "linkedin" },
       { href: "https://x.com", icon: "x" },
@@ -40,7 +40,7 @@ const TEAM: TeamMember[] = [
     name: "Marcus Reed",
     role: "Full-Stack Developer",
     image: "/image/user/user3.jpg",
-    focus: "Web & mobile architecture",
+    focus: "Next.js, React, Node—web and API development",
     social: [
       { href: "https://linkedin.com", icon: "linkedin" },
       { href: "https://github.com", icon: "github" },
@@ -48,9 +48,9 @@ const TEAM: TeamMember[] = [
   },
   {
     name: "Elena Vasquez",
-    role: "Motion & Animation",
+    role: "Mobile & Social",
     image: "/image/user/user4.jpg",
-    focus: "Motion design & storytelling",
+    focus: "Flutter, React Native & social media strategy",
     social: [
       { href: "https://linkedin.com", icon: "linkedin" },
       { href: "https://x.com", icon: "x" },
@@ -138,10 +138,10 @@ export default function TeamSection() {
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-primary/90 mb-3">
                 The people behind the pixels
               </p>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light tracking-tighter text-white leading-[1.05]">
+              <h2 className="text-4xl md:text-5xl font-light tracking-tighter text-white leading-[1.05]">
                 Creative <span className="italic text-primary">minds.</span>
                 <br />
-                <span className="text-secondary/80 font-normal">Real impact.</span>
+                <span className="text-white font-normal">Real impact.</span>
               </h2>
             </div>
             <div className="flex items-center gap-4">

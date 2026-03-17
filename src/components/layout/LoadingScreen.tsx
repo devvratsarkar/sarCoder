@@ -107,7 +107,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1"
-                className="text-zinc-800"
+                className="text-secondary"
               />
               <motion.circle
                 cx="18"

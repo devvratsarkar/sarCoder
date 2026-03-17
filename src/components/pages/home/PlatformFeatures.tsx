@@ -191,23 +191,22 @@ export default function PlatformFeatures() {
 
                         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 z-10 relative gap-x-8 gap-y-8">
                             <div className="max-w-2xl">
-                                <h2 className="text-4xl md:text-5xl lg:text-6xl text-white font-light tracking-tighter mb-4 font-geist leading-[1.1] reveal-on-scroll">
-                                    Automate your
-                                    entire revenue <span className='text-primary'>stack.</span>
+                                <h2 className="text-4xl md:text-5xl text-white font-light tracking-tighter mb-4 font-geist leading-[1.1] reveal-on-scroll">
+                                    We build what you
+                                    imagine—<span className='text-primary'>then some.</span>
                                 </h2>
 
                                 <p className="text-lg font-geist max-w-md text-secondary reveal-on-scroll">
-                                    Deploy autonomous agents, intelligent workflows, and neural routing to scale your sales motion without
-                                    adding headcount.
+                                    From custom websites and mobile apps to brand identity and social presence, we turn ideas into live products using a stack you can grow with.
                                 </p>
                             </div>
 
                             <div className="flex flex-col sm:flex-row items-center gap-4">
                                 <ScannerButton className='btn-scan-solid'>
-                                    View documentation
+                                    See our work
                                 </ScannerButton>
                                 <ScannerButton endIcon={<HiOutlineArrowUpRight className="size-4" aria-hidden />}>
-                                    Explore platformect
+                                    Start a project
                                 </ScannerButton>
                             </div>
                         </div>
@@ -247,14 +246,13 @@ export default function PlatformFeatures() {
                                         <rect x="4" y="4" width="16" height="16" rx="2" />
                                         <rect x="8" y="8" width="8" height="8" rx="1" />
                                     </svg>
-                                    <span className="text-primary font-mono text-xs tracking-widest uppercase font-geist">Core Engine</span>
+                                    <span className="text-primary font-mono text-xs tracking-widest uppercase font-geist">How we work</span>
                                 </div>
-                                <h2 className="text-3xl md:text-4xl text-white font-light tracking-tighter mb-4 font-geist reveal-on-scroll">
-                                    Built for speed.
+                                <h2 className="text-4xl md:text-5xl text-white font-light tracking-tighter mb-4 font-geist reveal-on-scroll">
+                                    Built for real deadlines.
                                 </h2>
                                 <p className="text-sm leading-relaxed font-geist text-secondary reveal-on-scroll">
-                                    Engineered to handle enterprise volume without losing the human touch. Our architecture scales with your
-                                    demand.
+                                    We ship on time without cutting corners. Clean code, modern frameworks, and a process that keeps you in the loop from kickoff to launch.
                                 </p>
                             </div>
 
@@ -281,10 +279,10 @@ export default function PlatformFeatures() {
                                         <TerminalAnimation containerRef={terminalRef} />
                                     </div>
                                     <h3 className="text-white font-medium mb-2 flex items-center gap-2 font-geist reveal-on-scroll">
-                                        Instant Deployment
+                                        Quick turnaround
                                     </h3>
                                     <p className="text-xs leading-relaxed font-geist reveal-on-scroll">
-                                        Go from signup to active prospecting in under 5 minutes with pre-configured agent templates.
+                                        From brief to first draft in days, not weeks. We iterate fast so you see progress early and can steer the ship.
                                     </p>
                                 </div>
 
@@ -439,10 +437,10 @@ export default function PlatformFeatures() {
                                         </div>
                                     </div>
                                     <h3 className="text-white font-medium mb-2 flex items-center gap-2 font-geist reveal-on-scroll">
-                                        Neural Routing
+                                        Web + mobile + CMS
                                     </h3>
                                     <p className="text-xs leading-relaxed font-geist text-secondary reveal-on-scroll">
-                                        Intelligent lead distribution based on intent signals, company size, and historical close rates.
+                                        One team, one vision. We build for the web, native and cross‑platform apps, and content-backed sites—all in sync.
                                     </p>
                                 </div>
                             </div>
@@ -467,8 +465,8 @@ export default function PlatformFeatures() {
                                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
                                 </svg>
                                 <div>
-                                    <h4 className="text-white text-sm font-medium font-geist">Real-time Sync</h4>
-                                    <p className="text-[10px] text-secondary mt-1 font-geist reveal-on-scroll">Bi-directional CRM updates.</p>
+                                    <h4 className="text-white text-sm font-medium font-geist">Live collaboration</h4>
+                                    <p className="text-[10px] text-secondary mt-1 font-geist reveal-on-scroll">Design and dev in sync, fewer surprises.</p>
                                 </div>
                             </div>
 
@@ -491,8 +489,8 @@ export default function PlatformFeatures() {
                                     <path d="m9 12 2 2 4-4" />
                                 </svg>
                                 <div>
-                                    <h4 className="text-white text-sm font-medium font-geist">SOC2 Compliant</h4>
-                                    <p className="text-[10px] text-secondary mt-1 font-geist reveal-on-scroll">Enterprise-grade security.</p>
+                                    <h4 className="text-white text-sm font-medium font-geist">Secure by default</h4>
+                                    <p className="text-[10px] text-secondary mt-1 font-geist reveal-on-scroll">Best practices baked into every build.</p>
                                 </div>
                             </div>
 
@@ -516,8 +514,8 @@ export default function PlatformFeatures() {
                                     <path d="M2 12h20" />
                                 </svg>
                                 <div>
-                                    <h4 className="text-white text-sm font-medium font-geist">Global Data</h4>
-                                    <p className="text-[10px] text-secondary mt-1 font-geist reveal-on-scroll">180+ countries supported.</p>
+                                    <h4 className="text-white text-sm font-medium font-geist">Hosting & launch</h4>
+                                    <p className="text-[10px] text-secondary mt-1 font-geist reveal-on-scroll">We get you live and keep you running.</p>
                                 </div>
                             </div>
 
@@ -541,8 +539,8 @@ export default function PlatformFeatures() {
                                     <path d="m14.5 4-5 16" />
                                 </svg>
                                 <div>
-                                    <h4 className="text-white text-sm font-medium font-geist">API First</h4>
-                                    <p className="text-[10px] text-secondary mt-1 font-geist reveal-on-scroll">Full programmatic access.</p>
+                                    <h4 className="text-white text-sm font-medium font-geist">Modern stack</h4>
+                                    <p className="text-[10px] text-secondary mt-1 font-geist reveal-on-scroll">Next.js, React, Node, Flutter, and more.</p>
                                 </div>
                             </div>
                         </div>
