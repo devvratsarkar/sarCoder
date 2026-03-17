@@ -1,0 +1,22 @@
+/* Projects portfolio – professional theme */
+
+.projects-portfolio-section {
+  position: relative;
+}
+
+.portfolio-card {
+  transform: translateZ(0);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-3px);
+}
+
+.portfolio-tab {
+  outline: none;
+}
+
+.portfolio-tab:focus-visible {
+  outline: 2px solid rgba(var(--primary-rgb), 0.5);
+  outline-offset: 2px;
+}
